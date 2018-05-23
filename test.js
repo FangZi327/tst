@@ -533,9 +533,13 @@
   };
 
 
-  ext._SillaTest = function(){
+  function SillaTest() {
+      //Do Nothing
+  };
+
+  ext.SillaTest = function(){
     //Do Nothing
-  }
+  };
 
   // Check for GET param 'lang'
   var paramString = window.location.search.replace(/^\?|\/$/g, '');
@@ -575,9 +579,10 @@
       ['h', 'when analog %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'read analog %n', 'analogRead', 0],
       ['-'],
-      ['r', 'map %n from %n %n to %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'map %n from %n %n to %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
-    ['h', 'Just Test Silla', 'SillaTest'],
+  
     de: [
       ['h', 'Wenn Arduino verbunden ist', 'whenConnected'],
       [' ', 'Verbinde %m.hwOut mit Pin %n', 'connectHW', 'LED A', 3],
@@ -605,8 +610,10 @@
       ['h', 'Wenn Analog %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'Wert von Analog %n', 'analogRead', 0],
       ['-'],
-      ['r', 'Setze %n von %n %n auf %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'Setze %n von %n %n auf %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
+
     fr: [
       ['h', "Quand l'appareil est connecté", 'whenConnected'],
       [' ', 'Connecté %m.hwOut au pin %n', 'connectHW', 'LED A', 3],
@@ -634,7 +641,8 @@
       ['h', 'Quand le Pin analogique est %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'Lire le Pin Analogique %n', 'analogRead', 0],
       ['-'],
-      ['r', 'Mapper %n de %n %n à %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'Mapper %n de %n %n à %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     it: [
       ['h', 'quando Arduino è connesso', 'whenConnected'],
@@ -663,7 +671,8 @@
       ['h', 'quando analog %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'leggi analog %n', 'analogRead', 0],
       ['-'],
-      ['r', 'porta %n da %n %n a %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'porta %n da %n %n a %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     ja: [
       ['h', 'デバイスがつながったとき', 'whenConnected'],
@@ -692,7 +701,8 @@
       ['h', 'アナログ入力 %n が %m.ops %n% になったとき', 'whenAnalogRead', 1, '>', 50],
       ['r', 'アナログ入力 %n の値', 'analogRead', 0],
       ['-'],
-      ['r', '%n を %n ... %n から %n ... %n へ変換', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', '%n を %n ... %n から %n ... %n へ変換', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     ko: [
       ['h', '아두이노가 연결됐을 때', 'whenConnected'],
@@ -721,7 +731,8 @@
       ['h', '아날로그 %n 번 핀의 값이 %m.ops %n% 일 때', 'whenAnalogRead', 1, '>', 50],
       ['r', '아날로그 %n 번 핀의 값', 'analogRead', 0],
       ['-'],
-      ['r', '%n 을(를) %n ~ %n 에서 %n ~ %n 의 범위로 바꾸기', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', '%n 을(를) %n ~ %n 에서 %n ~ %n 의 범위로 바꾸기', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     nb: [
       ['h', 'når enheten tilkobles', 'whenConnected'],
@@ -750,7 +761,8 @@
       ['h', 'når analog %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'analog %n verdi', 'analogRead', 0],
       ['-'],
-      ['r', 'skalér %n fra %n %n til %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'skalér %n fra %n %n til %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     nl: [
       ['h', 'als het apparaat verbonden is', 'whenConnected'],
@@ -779,7 +791,8 @@
       ['h', 'wanneer analoge %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'lees analoge %n', 'analogRead', 0],
       ['-'],
-      ['r', 'zet %n van %n %n tot %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'zet %n van %n %n tot %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     pl: [
       ['h', 'kiedy urządzenie jest podłączone', 'whenConnected'],
@@ -808,7 +821,8 @@
       ['h', 'kiedy we analogowe %n jest w położeniu %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'odczytaj we analogowe %n', 'analogRead', 0],
       ['-'],
-      ['r', 'przekształć wartość %n z zakresu %n %n na %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'przekształć wartość %n z zakresu %n %n na %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     pt: [
       ['h', 'Quando dispositivo estiver conectado', 'whenConnected'],
@@ -837,7 +851,8 @@
       ['h', 'quando valor analogico %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'ler valor analogico %n', 'analogRead', 0],
       ['-'],
-      ['r', 'mapear %n from %n %n to %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'mapear %n from %n %n to %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     ru: [
       ['h', 'когда устройство подключено', 'whenConnected'],
@@ -866,7 +881,8 @@
       ['h', 'когда ан. вход %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'значение ан. входа %n', 'analogRead', 0],
       ['-'],
-      ['r', 'отобразить %n из %n %n в %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'отобразить %n из %n %n в %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     el: [
       ['h', 'Όταν η συσκευή είναι συνδεδεμένη', 'whenConnected'],
@@ -895,7 +911,8 @@
       ['h', 'Όταν το αναλογικό %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'διάβασε το αναλογικό %n', 'analogRead', 0],
       ['-'],
-      ['r', 'συσχέτισε %n από %n %n έως %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'συσχέτισε %n από %n %n έως %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     es: [
       ['h', 'al conectar el dispositivo', 'whenConnected'],
@@ -924,7 +941,8 @@
       ['h', 'cuando pin analógico %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'leer analógico %n', 'analogRead', 0],
       ['-'],
-      ['r', 'convertir %n de %n %n a %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'convertir %n de %n %n a %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ],
     zh: [
       ['h', '當裝置連接時', 'whenConnected'],
@@ -953,7 +971,8 @@
       ['h', '當類比 %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', '讀取類比 %n', 'analogRead', 0],
       ['-'],
-      ['r', '對應 %n 由 %n %n 為 %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', '對應 %n 由 %n %n 為 %n %n', 'mapValues', 50, 0, 100, -240, 240],
+      ['h', 'Just Test Silla', 'SillaTest']
     ]
   };
 
@@ -1106,6 +1125,6 @@
     url: 'http://khanning.github.io/scratch-arduino-extension'
   };
 
-  ScratchExtensions.register('Arduino', descriptor, ext, {type:'serial'});
+  ScratchExtensions.register('ArduinoTst', descriptor, ext, {type:'serial'});
 
 })({});
